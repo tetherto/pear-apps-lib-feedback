@@ -118,6 +118,12 @@ Sends feedback to a Google Form.
 
 This library has no external runtime dependencies.
 
+## Depended Submodules
+
+The following sibling submodules must be present in the workspace (they are not declared as npm dependencies):
+
+- [`tether-dev-docs`](../tether-dev-docs)
+
 ## Testing
 
 The library includes unit tests for all functionality. To run the tests:
