@@ -5,6 +5,7 @@ A lightweight JavaScript library for collecting and submitting user feedback fro
 ## Table of Contents
 
 - [Features](#features)
+- [Security Notice](#security-notice)
 - [Installation](#installation)
 - [Usage Examples](#usage-examples)
 - [API Reference](#api-reference)
@@ -22,12 +23,17 @@ A lightweight JavaScript library for collecting and submitting user feedback fro
 - Highly configurable for different use cases
 - No external dependencies
 
+## Security Notice
+
+1. To ensure the security and integrity of your projects, please note that official PearPass packages are distributed exclusively through our GitHub organization.
+2. Any packages with similar names found on the npm registry or other third-party package managers are not affiliated with PearPass and should be strictly avoided. We recommend installing directly from this repository to ensure you are using the verified, open-source version.
+
 ## Installation
 
 Install the package via npm:
 
 ```bash
-npm install pear-apps-lib-feedback
+npm install git+https://github.com/tetherto/pear-apps-lib-feedback.git
 ```
 
 ## Usage Examples
@@ -35,7 +41,7 @@ npm install pear-apps-lib-feedback
 ### Sending Feedback to Slack
 
 ```javascript
-import { sendSlackFeedback } from 'pear-apps-lib-feedback';
+import { sendSlackFeedback } from '@tetherto/pear-apps-lib-feedback';
 
 // Send a bug report to Slack
 sendSlackFeedback({
@@ -52,7 +58,7 @@ sendSlackFeedback({
 ### Sending Feedback to Google Forms
 
 ```javascript
-import { sendGoogleFormFeedback } from 'pear-apps-lib-feedback';
+import { sendGoogleFormFeedback } from '@tetherto/pear-apps-lib-feedback';
 
 // Send a feature request to Google Forms
 sendGoogleFormFeedback({
@@ -118,12 +124,6 @@ Sends feedback to a Google Form.
 
 This library has no external runtime dependencies.
 
-## Depended Submodules
-
-The following sibling submodules must be present in the workspace (they are not declared as npm dependencies):
-
-- [`tether-dev-docs`](../tether-dev-docs)
-
 ## Testing
 
 The library includes unit tests for all functionality. To run the tests:
@@ -134,10 +134,10 @@ npm test
 
 ## Related Projects
 
-- [pearpass-app-desktop](https://github.com/tetherto/pearpass-app-desktop) - A desktop app for PearPass, a password manager
-- [pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager
-- [pearpass-app-browser-extension](https://github.com/tetherto/pearpass-app-browser-extension) - A nrowser extension app for PearPass, a password manager
-- [tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
+- [@tetherto/pearpass-app-desktop](https://github.com/tetherto/pearpass-app-desktop) - A desktop app for PearPass, a password manager
+- [@tetherto/pearpass-app-mobile](https://github.com/tetherto/pearpass-app-mobile) - A mobile app for PearPass, a password manager
+- [@tetherto/pearpass-app-browser-extension](https://github.com/tetherto/pearpass-app-browser-extension) - A nrowser extension app for PearPass, a password manager
+- [@tetherto/tether-dev-docs](https://github.com/tetherto/tether-dev-docs) - Documentations and guides for developers
 
 ## License
 
