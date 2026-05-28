@@ -1,5 +1,5 @@
 {
-  "name": "pear-apps-lib-feedback",
+  "name": "@tetherto/pear-apps-lib-feedback",
   "version": "0.0.7",
   "type": "module",
   "description": "A library for sending feedbacks to slack channels and google forms",
